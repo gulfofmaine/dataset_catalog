@@ -1,0 +1,14 @@
+black
+check-manifest
+interrogate
+jupyter
+myst-parser
+nbsphinx
+pre-commit
+pytest
+pytest-cov
+pytest-xdist
+setuptools_scm
+sphinx
+twine
+wheel
