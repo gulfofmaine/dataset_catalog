@@ -1,0 +1,216 @@
+<dataset type="EDDTableFromThreddsFiles" datasetID="CINAR_GLIDER_rutgers_414" active="false">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <fileDir></fileDir>  <!-- automatically set to [bigParentDirectory]/copy/rutgers_marine_cd2b_7a87_1333/ -->
+    <recursive>true</recursive>
+    <fileNameRegex>414_20140422T2000_unit_active.nc</fileNameRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <sortedColumnSourceName></sortedColumnSourceName>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="Conventions">CF-1.0</att>
+        <att name="history">Created by /home/om/cron/glider/glider_handler.m on 2014-05-05 07:00:45 using /home/om/cron/glider/glider.xml by Eli Hunter</att>
+        <att name="Institution">Institute for Marine and Coastal Sciences. Rutgers, The State University</att>
+        <att name="Title">Rutgers University COOL glider data on standard depths</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">CF-1.6, COARDS, Unidata Dataset Discovery v1.0</att>
+        <att name="creator_name">Institute for Marine and Coastal Sciences. Rutgers, The State University</att>
+        <att name="creator_url">http://tds.marine.rutgers.edu:8080/thredds/catalog/cool/glider/mab/Gridded/catalog.html</att>
+        <att name="infoUrl">http://tds.marine.rutgers.edu:8080/thredds/catalog/cool/glider/mab/Gridded/catalog.html</att>
+        <att name="Institution">null</att>
+        <att name="institution">Institute for Marine and Coastal Sciences. Rutgers, The State University</att>
+        <att name="keywords">chemistry, chlorophyll, coastal, color, colored, concentration, concentration_of_chlorophyll_in_sea_water, cool, data, density, depth, depths, dissolved, dissolved o2, glider, institute, marine, matter, o2, ocean, ocean color, oceans,
+Oceans &gt; Ocean Chemistry &gt; Chlorophyll,
+Oceans &gt; Salinity/Density &gt; Salinity,
+organic, oxygen, percent, profile, rutgers, salinity, saturation, scattering, sciences., sea, sea_water_salinity, seawater, standard, state, temperature, university, volume, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="Metadata_Conventions">CF-1.6, COARDS, Unidata Dataset Discovery v1.0</att>
+        <att name="sourceUrl">http://tds.marine.rutgers.edu:8080/thredds/catalog/cool/glider/mab/Gridded/catalog.xml</att>
+        <att name="standard_name_vocabulary">CF-12</att>
+        <att name="summary">Rutgers University COOL glider data on standard depths</att>
+        <att name="title">Rutgers University COOL glider data on standard depths</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>profile</sourceName>
+        <destinationName>profile</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Profile</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="history">Bin center depths at 2m resolution</att>
+            <att name="long_name">Depth</att>
+            <att name="name">standard depth</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="colorBarPalette">OceanDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>temperature</sourceName>
+        <destinationName>temperature</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_Fillvalue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Uncorrected,Binned data</att>
+            <att name="long_name">Temperature</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">temperature</att>
+            <att name="time">time</att>
+            <att name="units">Celsius</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">40.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>salinity</sourceName>
+        <destinationName>salinity</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_Fillvalue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Uncorrected, Binned data</att>
+            <att name="long_name">Salinity</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">salinity</att>
+            <att name="time">time</att>
+            <att name="units">psu</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="standard_name">sea_water_salinity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>OX</sourceName>
+        <destinationName>OX</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Glider Science Bay Data</att>
+            <att name="long_name">Oxygen Concentration</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">OX</att>
+            <att name="obs_provenance" type="double">-1.0</att>
+            <att name="time">time</att>
+            <att name="units">mL/L</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Dissolved O2</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>OXSAT</sourceName>
+        <destinationName>OXSAT</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Glider Science Bay Data</att>
+            <att name="long_name">Oxygen Percent Saturation</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">OXSAT</att>
+            <att name="obs_provenance" type="double">-1.0</att>
+            <att name="time">time</att>
+            <att name="units">&#37;</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Dissolved O2</att>
+            <att name="units">percent</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CDOM</sourceName>
+        <destinationName>CDOM</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Glider Science Bay Data</att>
+            <att name="long_name">colored dissolved organic matter concentration</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">CDOM</att>
+            <att name="obs_provenance" type="double">-1.0</att>
+            <att name="time">time</att>
+            <att name="units">parts per billion</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CHLA</sourceName>
+        <destinationName>CHLA</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Glider Science Bay Data</att>
+            <att name="long_name">chlorophyll a concentration</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">CHLA</att>
+            <att name="obs_provenance" type="double">-1.0</att>
+            <att name="time">time</att>
+            <att name="units">micrograms per liter</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BB</sourceName>
+        <destinationName>BB</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">9.999E20</att>
+            <att name="coordinates">depth time</att>
+            <att name="history">Glider Science Bay Data</att>
+            <att name="long_name">Volume scattering</att>
+            <att name="missing_value" type="double">9.999E20</att>
+            <att name="name">BB</att>
+            <att name="obs_provenance" type="double">-1.0</att>
+            <att name="time">time</att>
+            <att name="units">inverse meters</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>

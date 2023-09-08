@@ -1,0 +1,198 @@
+<dataset type="EDDTableFromAsciiFiles" datasetID="WHOI_ESP_DENNIS_CTD" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <fileDir>/home2/data/WHOI_ESP_CSV/</fileDir>
+    <recursive>true</recursive>
+    <fileNameRegex>DENNIS_CTD\.csv</fileNameRegex>
+    <metadataFrom>last</metadataFrom>
+    <charset>ISO-8859-1</charset>
+    <columnNamesRow>1</columnNamesRow>
+    <firstDataRow>2</firstDataRow>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <sortedColumnSourceName>time</sortedColumnSourceName>
+    <sortFilesBySourceNames>time</sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="defaultGraphQuery">time,Chlorophyll&amp;.draw=lines&amp;.color=0x000000</att>
+        <att name="neracoos_data_provider">WHOI</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+        <att name="project" >NERACOOS</att>
+        <att name="project_url">http://www.whoi.edu</att>
+        <att name="infoUrl">http://www.neracoos.org/</att>
+        <att name="cdm_data_type" >timeSeries</att>
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
+        <att name="creator_name">Woods Hole Oceanographic Institute - The Anderson Lab</att>
+        <att name="creator_url">http://www.whoi.edu</att>
+        <att name="infoUrl">http://www.whoi.edu</att>
+        <att name="institution">Woods Hole Oceanographic Institute - The Anderson Lab</att>
+        <att name="keywords">anderson, ctd, datetime, degrees, density, depth, don, epoch, esp, gom, gom-esp, hole, institute, lab, m^3, merhab, oceanographic, oceans,
+Oceans &gt; Salinity/Density &gt; Salinity,
+salinity, sea, sea_water_salinity, seawater, seconds, station, temperature, time, timestamp, water, woods</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="Metadata_Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF-12</att>
+        <att name="summary">MERHAB: GOM-ESP DENNIS CTD</att>
+        <att name="title">WHOI ESP - DENNIS CTD (provisional)</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>station</sourceName>
+        <destinationName>station</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Station</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>water_depth</sourceName>
+        <destinationName>water_depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Water Depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Timestamp(Epoch Seconds)</sourceName>
+        <destinationName>Timestamp_Epoch_Seconds_</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Timestamp( Epoch Seconds)</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Datetime</sourceName>
+        <destinationName>Datetime</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Datetime</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Temperature (Degrees C)</sourceName>
+        <destinationName>Temperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Water Temperature</att>
+            <att name="short_name">WT</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">celsius</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Depth (meters)</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="axis">Z</att>
+            <att name="positive">down</att>
+            <att name="standard_name">depth</att>
+            <att name="units">m</att>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="colorBarPalette">OceanDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Depth</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Salinity (psu)</sourceName>
+        <destinationName>Salinity</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Salinity</att>
+            <att name="standard_name">sea_water_salinity</att>
+            <att name="units">psu</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Chlorophyll (mg/m^3)</sourceName>
+        <destinationName>Chlorophyll</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll</att>
+            <att name="short_name">Chl</att>
+            <att name="standard_name">chlorophyll_concentration_in_sea_water</att>
+            <att name="units">milligrams/cubic_meter</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>

@@ -9,3 +9,4 @@ __pycache__/
 build/
 dist/
 ioos_pkg_skeleton/_version.py
+dataset_catalog/_version.py

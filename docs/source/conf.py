@@ -50,7 +50,7 @@ source_suffix = [".rst", ".md"]
 master_doc = "index"
 
 # General information about the project.
-project = "ioos_pkg_skeleton"
+project = "dataset_catalog"
 copyright = "2017, Filipe Fernandes"
 author = "Filipe Fernandes"
 
@@ -58,7 +58,7 @@ author = "Filipe Fernandes"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-from ioos_pkg_skeleton import __version__ as VERSION  # noqa
+from dataset_catalog import __version__ as VERSION  # noqa
 
 version = VERSION
 # The full version, including alpha/beta/rc tags.

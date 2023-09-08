@@ -1,0 +1,113 @@
+<dataset type="EDDGridFromNcFiles" datasetID="WW3_GulfOfMaine_latest" active="true">
+        <!-- every 12 hours this forecast gets updated -->
+        <reloadEveryNMinutes>360</reloadEveryNMinutes>
+        <fileDir>/home2/data/models/WW3/</fileDir>
+        <recursive>false</recursive>
+        <metadataFrom>first</metadataFrom>
+        <fileNameRegex>GulfOfMaine\.nc</fileNameRegex>
+        <fileTableInMemory>false</fileTableInMemory>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="cdm_data_type">Grid</att>
+            <att name="Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
+            <att name="infoUrl">http://www.neracoos.org</att>
+            <att name="institution">Bedford Institute of Oceanography</att>
+            <att name="creator_name">Principal Investigator">Dr. William Perrie</att>
+            <att name="creator_url">http://www.bio.gc.ca/</att>
+            <att name="keywords">data, direction, dominant, frequency, height, local, ocean, oceans,
+    Oceans &gt; Ocean Waves &gt; Significant Wave Height,
+    Oceans &gt; Ocean Waves &gt; Wave Speed/Direction,
+    sea, sea_surface_wave_significant_height, sea_surface_wave_to_direction, significant, source., speed, surface, surface waves, wave, waves</att>
+            <att name="keywords_vocabulary">GCMD Science Keywords</att>
+            <att name="license">[standard]</att>
+            <att name="Metadata_Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
+            <att name="standard_name_vocabulary">CF-12</att>
+            <att name="summary">BIO WW III Latest Forecasts Gulf Of Maine</att>
+            <att name="title">BIO WW III Latest Forecasts Gulf Of Maine</att>
+        </addAttributes>
+        <axisVariable>
+            <sourceName>time</sourceName>
+            <destinationName>time</destinationName>
+            <addAttributes>
+                <att name="ioos_category">Time</att>
+                <att name="long_name">Time</att>
+                <att name="standard_name">time</att>
+            </addAttributes>
+        </axisVariable>
+        <axisVariable>
+            <sourceName>lat</sourceName>
+            <destinationName>latitude</destinationName>
+            <!-- sourceAttributes>
+                <att name="units">degrees_north</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Latitude</att>
+                <att name="standard_name">latitude</att>
+            </addAttributes>
+        </axisVariable>
+        <axisVariable>
+            <sourceName>lon</sourceName>
+            <destinationName>longitude</destinationName>
+            <!-- sourceAttributes>
+                <att name="units">degrees_east</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Longitude</att>
+                <att name="standard_name">longitude</att>
+            </addAttributes>
+        </axisVariable>
+        <dataVariable>
+            <sourceName>hs</sourceName>
+            <destinationName>hs</destinationName>
+            <dataType>short</dataType>
+            <!-- sourceAttributes>
+                <att name="_FillValue" type="short">-999</att>
+                <att name="add_offset" type="float">0.0</att>
+                <att name="long_name">Significant Wave Height</att>
+                <att name="scale_factor" type="float">0.01</att>
+                <att name="standard_name">sea_surface_wave_significant_height</att>
+                <att name="units">m</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="ioos_category">Surface Waves</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>swp</sourceName>
+            <destinationName>swp</destinationName>
+            <dataType>short</dataType>
+            <!-- sourceAttributes>
+                <att name="_FillValue" type="short">-999</att>
+                <att name="add_offset" type="float">0.0</att>
+                <att name="long_name">sea_surface_wave_frequency</att>
+                <att name="scale_factor" type="float">0.01</att>
+                <att name="units">s</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="ioos_category">Surface Waves</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>dir</sourceName>
+            <destinationName>dir</destinationName>
+            <dataType>short</dataType>
+            <!-- sourceAttributes>
+                <att name="_FillValue" type="short">-999</att>
+                <att name="add_offset" type="float">0.0</att>
+                <att name="long_name">Dominant Wave Direction</att>
+                <att name="scale_factor" type="float">1.0</att>
+                <att name="units">degree_true</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">360.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="ioos_category">Surface Waves</att>
+                <att name="standard_name">sea_surface_wave_to_direction</att>
+            </addAttributes>
+        </dataVariable>
+    </dataset>
