@@ -1,0 +1,4 @@
+<dataset type="EDDTableFromErddap" datasetID="cwwcNDBCMet" active="true">
+    <!-- NDBC Standard Meteorological Buoy Data -->
+    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/cwwcNDBCMet</sourceUrl>
+</dataset>

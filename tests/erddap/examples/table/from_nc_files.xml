@@ -1,0 +1,684 @@
+<dataset type="EDDTableFromNcFiles" datasetID="CINAR_DSG_MA101_met" active="true">
+    <reloadEveryNMinutes>60</reloadEveryNMinutes>
+    <fileDir>/home2/data/DSG/MA101/</fileDir>
+    <recursive>true</recursive>
+    <fileNameRegex>.*\.met\..*\.nc</fileNameRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="air_temperature_averaging_period" type="int">10</att>
+        <att name="air_temperature_number_samples_per_observation" type="int">600</att>
+        <att name="averaging_period_units">Minutes</att>
+        <att name="barometric_pressure_averaging_period" type="int">10</att>
+        <att name="barometric_pressure_number_samples_per_observation" type="int">600</att>
+        <att name="breakout_id" type="int">1</att>
+        <att name="buffer_type">met</att>
+        <att name="cdm_data_type">timeSeries</att>
+        <att name="clock_time">Center of period</att>
+        <att name="contact">nealp@maine.edu,ljm@umeoce.maine.edu,bfleming@umeoce.maine.edu</att>
+        <att name="Conventions">CF-1.6</att>
+        <att name="creator_email">nealp@maine.edu,ljm@umeoce.maine.edu,bfleming@umeoce.maine.edu</att>
+        <att name="creator_name">Neal Pettigrew</att>
+        <att name="creator_url">http://gyre.umeoce.maine.edu</att>
+        <att name="delta_t" type="int">10</att>
+        <att name="depth_datum">Sea Level</att>
+        <att name="ending_julian_day_number" type="double">56769.583333333336</att>
+        <att name="ending_julian_day_string">2014-04-22 14:00:00</att>
+        <att name="featureType">timeSeries</att>
+        <att name="id">MA101</att>
+        <att name="institution">Department of Physical Oceanography, School of Marine Sciences, University of Maine</att>
+        <att name="institution_url">http://gyre.umeoce.maine.edu</att>
+        <att name="julian_day_convention">Julian date convention begins at 00:00:00 UTC on 17 November 1858 AD</att>
+        <att name="keywords">Oceans &gt; Ocean Temperature &gt; Water Temperature,Oceans &gt; Ocean Pressure &gt; Sea Level Pressure,Oceans &gt; Ocean Chemistry &gt; Oxygen,Oceans &gt; Ocean Chemistry &gt; Chlorophyll,Oceans &gt; Ocean Optics &gt; Turbidity,Oceans &gt; Salinity/Density &gt; Conductivity,Oceans &gt; Salinity/Density &gt; Salinity,Oceans &gt; Salinity/Density &gt; Density,Oceans &gt; Ocean Waves &gt; Significant Wave Height,Oceans &gt; Ocean Waves &gt; Wave Period,Oceans &gt; Ocean Winds &gt; Surface Winds,Oceans &gt; Ocean Circulation &gt; Ocean Currents </att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="long_name">MA101</att>
+        <att name="magnetic_variation" type="double">-15.0</att>
+        <att name="manufacturer">AirMar</att>
+        <att name="model">200WX</att>
+        <att name="mooring_site_desc">Cape Cod Bay</att>
+        <att name="mooring_site_id">MA101</att>
+        <att name="mooring_type">Storm</att>
+        <att name="naming_authority">edu.maine</att>
+        <att name="number_observations_per_hour" type="int">6</att>
+        <att name="position_datum">WGS 84</att>
+        <att name="processing">realtime</att>
+        <att name="project">NERACOOS</att>
+        <att name="project_url">http://neracoos.org</att>
+        <att name="publisher">Department of Physical Oceanography, School of Marine Sciences, University of Maine</att>
+        <att name="publisher_email">info@neracoos.org</att>
+        <att name="publisher_name">Northeastern Regional Association of Coastal and Ocean Observing Systems (NERACOOS)</att>
+        <att name="publisher_phone">(603) 319 1785</att>
+        <att name="publisher_url">http://www.neracoos.org/</att>
+        <att name="references">http://gyre.umeoce.maine.edu/data/gomoos/buoy/doc/buoy_system_doc/buoy_system/book1.html</att>
+        <att name="serial_number">AIRMT2915811</att>
+        <att name="short_name">MA101</att>
+        <att name="source">Ocean Data Acquisition Systems (ODAS) Buoy</att>
+        <att name="standard_name_vocabulary">CF-1.6</att>
+        <att name="starting_julian_day_number" type="double">56726.97222222222</att>
+        <att name="starting_julian_day_string">2014-03-10 23:20:00</att>
+        <att name="station_name">MA101</att>
+        <att name="station_photo">http://gyre.umeoce.maine.edu/gomoos/images/cinar_buoy.png</att>
+        <att name="station_type">Surface Mooring</att>
+        <att name="summary">Ocean observation data from the Northeastern Regional Association of Coastal &amp;amp; Ocean Observing Systems (NERACOOS). The NERACOOS region includes the northeast United States and Canadian Maritime provinces, as part of the United States Integrated Ocean Observing System (IOOS).  These data are served by Unidata&#39;s Thematic Realtime Environmental Distributed Data Services (THREDDS) Data Server (TDS) in a variety of interoperable data services and output formats.</att>
+        <att name="time_zone">UTC</att>
+        <att name="title">Department of Physical Oceanography, School of Marine Sciences, University of Maine MA101 Met realtime Buoy Sensor</att>
+        <att name="watch_circle_radius" type="int">20</att>
+        <att name="water_depth" type="double">20.0</att>
+        <att name="wind_direction_averaging_period" type="int">10</att>
+        <att name="wind_direction_number_samples_per_observation" type="int">600</att>
+        <att name="wind_gust_averaging_period" type="int">1</att>
+        <att name="wind_gust_number_samples_per_observation" type="int">5</att>
+        <att name="wind_speed_averaging_period" type="int">10</att>
+        <att name="wind_speed_number_samples_per_observation" type="int">600</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="neracoos_data_provider">CINAR</att>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+        <att name="Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
+        <att name="Conventions">CF-1.6, COARDS, Unidata Dataset Discovery v1.0</att>
+        <att name="history">Ocean Data Acquisition Systems (ODAS) Buoy</att>
+        <att name="infoUrl">http://www.neracoos.org/</att>
+        <att name="institution">NERACOOS</att>
+        <att name="keywords">ma101, air, air_temperature, air_temperature data_quality, atmosphere,
+Atmosphere &gt; Atmospheric Temperature &gt; Air Temperature,
+Atmosphere &gt; Atmospheric Temperature &gt; Surface Air Temperature,
+Atmosphere &gt; Atmospheric Winds &gt; Surface Winds,
+atmospheric, barometric, barometric_pressure, barometric_pressure data_quality, buoy, chemistry, chlorophyll, cinar, circulation, conductivity, created, currents, data, density, department, depth, direction, gust, height, interval, last, level, ma101, maine, marine, met, min, minimum, modified, name, neracoos, o2, ocean, oceanography, oceans,
+Oceans &gt; Ocean Chemistry &gt; Chlorophyll,
+Oceans &gt; Ocean Chemistry &gt; Oxygen,
+Oceans &gt; Ocean Circulation &gt; Ocean Currents,
+Oceans &gt; Ocean Optics &gt; Turbidity,
+Oceans &gt; Ocean Pressure &gt; Sea Level Pressure,
+Oceans &gt; Ocean Temperature &gt; Water Temperature,
+Oceans &gt; Ocean Waves &gt; Significant Wave Height,
+Oceans &gt; Ocean Waves &gt; Wave Period,
+Oceans &gt; Ocean Winds &gt; Surface Winds,
+Oceans &gt; Salinity/Density &gt; Conductivity,
+Oceans &gt; Salinity/Density &gt; Density,
+Oceans &gt; Salinity/Density &gt; Salinity,
+offset, offset_time, optics, oxygen, period, physical, pressure, quality, realtime, record, regular, salinity, school, sciences, sea, seawater, sec, sensor, significant, source, speed, station, station_name, surface, temperature, tempests, time, turbidity, university, water, wave, waves, wind, wind_from_direction, wind_from_direction data_quality, wind_gust data_quality, wind_gust_1s data_quality, wind_gust_time data_quality, wind_min data_quality, wind_source, wind_speed, wind_speed data_quality, wind_speed_of_gust, winds</att>
+        <att name="license">[standard]</att>
+        <att name="Metadata_Conventions">CF-1.6, COARDS, Unidata Dataset Discovery v1.0</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="summary">CINAR Storm MA101 Met</att>
+        <att name="title">TEMPESTS MA101 Met - CINAR</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>station</sourceName>
+        <destinationName>station</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="long_name">MA101</att>
+            <att name="name">MA101</att>
+            <att name="short_name">MA101</att>
+            <att name="standard_name">station_name</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Station</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="calendar">gregorian</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="standard_name">time</att>
+            <att name="units">days since 1858-11-17 00:00:00 +0:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>global:mooring_site_desc</sourceName>
+        <destinationName>mooring_site_desc</destinationName>
+        <dataType>String</dataType>
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Station Description</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>air_temperature</sourceName>
+        <destinationName>air_temperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">0.9</att>
+            <att name="ancillary_variables">air_temperature_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="epic_code" type="int">20</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">-40.0 40.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Air Temperature</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.01</att>
+            <att name="short_name">AT</att>
+            <att name="standard_name">air_temperature</att>
+            <att name="units">celsius</att>
+            <att name="valid_range" type="floatList">-30.0 30.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">40.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>air_temperature_qc</sourceName>
+        <destinationName>air_temperature_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Air Temperature QC</att>
+            <att name="short_name">ATQC</att>
+            <att name="standard_name">air_temperature data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>barometric_pressure</sourceName>
+        <destinationName>barometric_pressure</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">1.0</att>
+            <att name="ancillary_variables">barometric_pressure_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="epic_code" type="int">915</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">800.0 1100.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Barometric Pressure</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.06</att>
+            <att name="short_name">BP</att>
+            <att name="standard_name">barometric_pressure</att>
+            <att name="units">millibars</att>
+            <att name="valid_range" type="floatList">900.0 1100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1150.0</att>
+            <att name="colorBarMinimum" type="double">850.0</att>
+            <att name="ioos_category">Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>barometric_pressure_qc</sourceName>
+        <destinationName>barometric_pressure_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Barometric Pressure QC</att>
+            <att name="short_name">BPQC</att>
+            <att name="standard_name">barometric_pressure data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_gust</sourceName>
+        <destinationName>wind_gust</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">0.1</att>
+            <att name="ancillary_variables">wind_gust_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="epic_code" type="int">42</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">0.0 60.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Wind Gust</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.001</att>
+            <att name="short_name">WGST</att>
+            <att name="units">m/s</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+            <att name="standard_name">wind_speed_of_gust</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_gust_qc</sourceName>
+        <destinationName>wind_gust_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Wind Gust QC</att>
+            <att name="short_name">WGSTQC</att>
+            <att name="standard_name">wind_gust data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_gust_time</sourceName>
+        <destinationName>wind_gust_time</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">-999.0</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="long_name">Wind Gust Time</att>
+            <att name="short_name">WGSTTM</att>
+            <att name="standard_name">wind_gust_time</att>
+            <att name="units">days since 1858-11-17 00:00:00</att>
+            <att name="valid_range" type="doubleList">0.0 99999.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">120000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+            <att name="standard_name">time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_gust_time_qc</sourceName>
+        <destinationName>wind_gust_time_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Wind Gust Time QC</att>
+            <att name="short_name">WGSTTMQC</att>
+            <att name="standard_name">wind_gust_time data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_speed</sourceName>
+        <destinationName>wind_speed</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">0.1</att>
+            <att name="ancillary_variables">wind_speed_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="epic_code" type="int">401</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">0.0 60.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Wind Speed</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.001</att>
+            <att name="short_name">WSPD</att>
+            <att name="standard_name">wind_speed</att>
+            <att name="units">m/s</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">15.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_speed_qc</sourceName>
+        <destinationName>wind_speed_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Wind Speed QC</att>
+            <att name="short_name">WSPDQC</att>
+            <att name="standard_name">wind_speed data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_direction</sourceName>
+        <destinationName>wind_direction</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">7.5</att>
+            <att name="ancillary_variables">wind_direction_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="dependency">wind_speed</att>
+            <att name="epic_code" type="int">410</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">0.0 360.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Wind Direction</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.1</att>
+            <att name="short_name">WDIR</att>
+            <att name="standard_name">wind_from_direction</att>
+            <att name="units">degrees_true</att>
+            <att name="valid_range" type="floatList">0.0 360.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_direction_qc</sourceName>
+        <destinationName>wind_direction_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Wind Direction QC</att>
+            <att name="short_name">WDIRQC</att>
+            <att name="standard_name">wind_from_direction data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_gust_1s</sourceName>
+        <destinationName>wind_gust_1s</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">0.1</att>
+            <att name="ancillary_variables">wind_gust_1s_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="epic_code" type="int">42</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">0.0 60.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Wind Gust 1 sec</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.001</att>
+            <att name="short_name">WGST1S</att>
+            <att name="units">m/s</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+            <att name="standard_name">wind_speed_of_gust</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_gust_1s_qc</sourceName>
+        <destinationName>wind_gust_1s_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Wind Gust 1 Sec QC</att>
+            <att name="short_name">WGST1SQC</att>
+            <att name="standard_name">wind_gust_1s data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_min</sourceName>
+        <destinationName>wind_min</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">-999.0</att>
+            <att name="accuracy" type="double">0.1</att>
+            <att name="ancillary_variables">wind_min_qc</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="epic_code" type="int">42</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="instrument_range" type="floatList">0.0 60.0</att>
+            <att name="is_dead" type="int">0</att>
+            <att name="long_name">Wind Minimum Speed</att>
+            <att name="measurement_type">Measured</att>
+            <att name="precision" type="double">0.001</att>
+            <att name="short_name">WMIN</att>
+            <att name="units">m/s</att>
+            <att name="valid_range" type="floatList">0.0 40.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">15.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+            <att name="standard_name">wind_speed</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wind_min_qc</sourceName>
+        <destinationName>wind_min_qc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-128</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_meanings">quality_good out_of_range sensor_nonfunctional questionable</att>
+            <att name="flag_values" type="byteList">0 1 2 3</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_quality</att>
+            <att name="long_name">Wind Minimum Speed QC</att>
+            <att name="short_name">WMinQC</att>
+            <att name="standard_name">wind_min data_quality</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="shortList">-127 127</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">128.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wsrc</sourceName>
+        <destinationName>wsrc</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="byte">-127</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="flag_value" type="byteList">1 2</att>
+            <att name="flag_value_meanings">1=From Airmar $WIMDA apparent wind, 1=calculated From Airmar $WIWVR relative wind and mag heading $HCHDG</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="intent">data_source</att>
+            <att name="long_name">Wind Source</att>
+            <att name="short_name">WSRC</att>
+            <att name="standard_name">wind_source</att>
+            <att name="units">1</att>
+            <att name="valid_range" type="byteList">1 2</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Wind</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>offset_time</sourceName>
+        <destinationName>offset_time</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">-999.0</att>
+            <att name="Comment">Add to time for actual sensor reading </att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="long_name">Offset from regular time interval</att>
+            <att name="short_name">off_time</att>
+            <att name="standard_name">offset_time</att>
+            <att name="units">seconds</att>
+            <att name="valid_range" type="doubleList">-3600.0 3600.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">4000.0</att>
+            <att name="colorBarMinimum" type="double">-4000.0</att>
+            <att name="ioos_category">Time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>time_created</sourceName>
+        <destinationName>time_created</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">-999.0</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="long_name">Time Record Created</att>
+            <att name="short_name">time_cr</att>
+            <att name="standard_name">time_created</att>
+            <att name="units">days since 1858-11-17 00:00:00</att>
+            <att name="valid_range" type="doubleList">0.0 99999.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">120000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Time</att>
+            <att name="standard_name">time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>time_modified</sourceName>
+        <destinationName>time_modified</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">-999.0</att>
+            <att name="coordinates">time lon lat depth</att>
+            <att name="HDF5_chunksize" type="int">1</att>
+            <att name="long_name">Time Record Last Modified</att>
+            <att name="short_name">time_mod</att>
+            <att name="standard_name">time_modified</att>
+            <att name="units">days since 1858-11-17 00:00:00</att>
+            <att name="valid_range" type="doubleList">0.0 99999.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">120000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Time</att>
+            <att name="standard_name">time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lon</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="standard_name">longitude</att>
+            <att name="units">degree_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lat</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="standard_name">latitude</att>
+            <att name="units">degree_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="positive">down</att>
+            <att name="standard_name">depth</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="colorBarPalette">OceanDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Depth</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
